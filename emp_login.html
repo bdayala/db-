@@ -1,23 +1,21 @@
-
 <!-- <!DOCTYPE HTML>
 <html>  
-	<body>
-		<h1> Parent Login </h1>
-		
-		<form action="login.php" method="post">
-		Email: <input type="text" name="emailaddy"><br>
-		SSN (password): <input type="text" name="parent_ssn"><br>
-			<input type="submit">
-		</form>
+<body>
+<h1> Employee Login </h1>
+<form action="emplogin.html" method="post">
+Employee Name: <input type="text" name="emp_name"><br>
+Employee SSN: <input type="text" name="emp_ssn"><br>
+<input type="submit">
+</form>
 
-	</body>
+</body>
 </html>
  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Employee Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <style type="text/css">
         body{ font: 14px sans-serif; }
@@ -26,9 +24,9 @@
 </head>
 <body>
     <div class="wrapper">
-        <h2>Login</h2>
-        <p>Please fill in your information to login.</p>
-        <form action="login.php" method="post">
+        <h2>Employee Login</h2>
+        <p>Please fill in your employee information to login.</p>
+        <form action="emplogin.php" method="post">
             <div class="form-group <?php echo (!empty($emailaddy)) ? 'has-error' : ''; ?>">
                 <label>Email:<sup>*</sup></label>
                 <input type="text" name="emailaddy" class="form-control">
@@ -42,7 +40,6 @@
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
             </div>
-            <p>Don't have an account? <a href="signup.html">Sign up now</a>.</p>
         </form>
     </div>    
 </body>
