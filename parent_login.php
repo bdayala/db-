@@ -7,8 +7,8 @@ $db_name="daycare database"; // Database name
 $tbl_name="parent"; // Table name 
 
 // Connect to server and select database.
-mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
-mysql_select_db("$db_name")or die("cannot select DB");
+mysqli_connect("$host", "$username", "$password")or die("cannot connect"); 
+mysqli_select_db("$db_name")or die("cannot select DB");
 // Get values from form 
 $email=$_POST['emailaddy'];
 $social=$_POST['parent_ssn'];

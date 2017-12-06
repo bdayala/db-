@@ -22,7 +22,7 @@ $address = $_POST["addy"];
 
 
 // Attempt login query execution
-
+$sql = "INSERT INTO parent (firstName,lastName, parent_SSN,DOB,email_address, phone_number, address) VALUES ('$fname', '$lname','$social','$date_birth' ,'$emailaddy','$phonenum' ,'$address')";
 
 if(mysqli_query($link, $sql))
 {

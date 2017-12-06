@@ -1,10 +1,10 @@
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-$link = mysqli_connect("localhost", "root", "", "daycare database");
+$linked = mysqli_connect("localhost", "root", "", "daycare database");
  
 // Check connection
-if($link === false)
+if($linked === false)
 {
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
@@ -12,25 +12,25 @@ if($link === false)
  
 print_r($_POST);
 print("<br>"); 
-$fname = $_POST["parent_fname"];
-$lname = $_POST["parent_lname"];
-$social = $_POST["parent_ssn"];
-$date_birth = $_POST["d_o_b"];
-$emailaddy = $_POST["emailaddy"];
-$phonenum = $_POST["ph_num"];
-$address = $_POST["addy"];
+$firname =isset( $_POST['emp_fname']);
+$lsname = isset($_POST['emp_lname']);
+$ssocial = isset($_POST['emp_ssn']);
+$date_b = $_POST["d_o_b"];
+$emailad = $_POST["emailaddy"];
+$phonen = $_POST["ph_num"];
+$addr = $_POST["addy"];
 
 
 // Attempt login query execution
+$sql = "INSERT INTO employee(firstName,lastName, employee_SSN, DOB ,email_address, phone_number, address) VALUES ('$firname', '$lsname','$ssocial','$date_b' ,'$emailad','$phonen' ,'$addr')";
 
-
-if(mysqli_query($link, $sql))
+if(mysqli_query($linked, $sql))
 {
     echo "Successfully signed up.";
 } else{
-    echo "ERROR: Not able to sign up. " . mysqli_error($link);
+    echo "ERROR: Not able to sign up. " . mysqli_error($linked);
 }
  
 // Close connection
-mysqli_close($link);
+mysqli_close($linked);
 ?>
