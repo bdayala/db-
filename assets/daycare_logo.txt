@@ -1,0 +1,49 @@
+
+<!-- <!DOCTYPE HTML>
+<html>  
+	<body>
+		<h1> Parent Login </h1>
+		
+		<form action="login.php" method="post">
+		Email: <input type="text" name="emailaddy"><br>
+		SSN (password): <input type="text" name="parent_ssn"><br>
+			<input type="submit">
+		</form>
+
+	</body>
+</html>
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <style type="text/css">
+        body{ font: 14px sans-serif; }
+        .wrapper{ width: 350px; padding: 20px; }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Login</h2>
+        <p>Please fill in your information to login.</p>
+        <form action="login.php" method="post">
+            <div class="form-group <?php echo (!empty($emailaddy)) ? 'has-error' : ''; ?>">
+                <label>Email:<sup>*</sup></label>
+                <input type="text" name="emailaddy" class="form-control">
+                <span class="help-block"> </span>
+            </div>    
+            <div class="form-group">
+                <label>SSN(Password):<sup>*</sup></label>
+                <input type="password" name="parent_ssn" class="form-control">
+                <span class="help-block"><?php echo $social; ?></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Submit">
+            </div>
+            <p>Don't have an account? <a href="signup.html">Sign up now</a>.</p>
+        </form>
+    </div>    
+</body>
+</html>
