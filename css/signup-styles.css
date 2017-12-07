@@ -1,0 +1,24 @@
+body{
+    background-color:#ffffcc;
+}
+.container{
+    margin-top:20px;
+    padding-bottom: 10px;
+    background-color:#fff;
+    border:1px solid #bfbfbf;
+}
+
+.container-form{
+    display: block;
+    width:400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

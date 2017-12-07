@@ -1,7 +1,16 @@
 body {
   padding-top: 5rem;
 }
+
+.logo{
+  max-width: 100%;
+  height:auto;
+}
+
 .starter-template {
   padding: 3rem 1.5rem;
   text-align: center;
 }
+
+
+
