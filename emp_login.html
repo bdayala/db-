@@ -17,16 +17,20 @@ Employee SSN: <input type="text" name="emp_ssn"><br>
     <meta charset="UTF-8">
     <title>Employee Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="css/emp-styles.css">
     <style type="text/css">
         body{ font: 14px sans-serif; }
         .wrapper{ width: 350px; padding: 20px; }
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <h2>Employee Login</h2>
-        <p>Please fill in your employee information to login.</p>
-        <form action="emplogin.php" method="post">
+
+    
+    <div class="container">
+        <img class="logo" src="./img/babylogo.png">
+        <h2><center>Employee Login</center></h2>
+        <p><center>Please fill in your employee information to login.</center></p><br>
+        <form class = "container-form" action="emplogin.php" method="post">
             <div class="form-group <?php echo (!empty($emailaddy)) ? 'has-error' : ''; ?>">
                 <label>Email:<sup>*</sup></label>
                 <input type="text" name="emailaddy" class="form-control">
@@ -40,7 +44,9 @@ Employee SSN: <input type="text" name="emp_ssn"><br>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
             </div>
-        </form>
-    </div>    
+        </form>      
+     
+    </div>
+  
 </body>
 </html>

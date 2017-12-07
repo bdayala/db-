@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <title>Parent Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="css/parent-styles.css">
     <style type="text/css">
         body{ font: 14px sans-serif; }
         .wrapper{ width: 350px; padding: 20px; }
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <h2>Parent Login</h2>
-        <p>Please fill in your information to login.</p>
-        <form action="parent_login.php" method="post">
+    <div class="container">
+        <img class="logo" src="./img/babylogo.png">
+        <h2><center>Parent Login</center></h2>
+        <p><center>Please fill in your information to login.</center></p>
+        <form  class="container-form" action="parent_login.php" method="post">
             <div class="form-group <?php echo (!empty($email)) ? 'has-error' : ''; ?>">
                 <label>Email:<sup>*</sup></label>
                 <input type="text" name="emailaddy" class="form-control">
