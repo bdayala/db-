@@ -1,7 +1,7 @@
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-$linked = mysqli_connect("localhost", "root", "", "daycare database");
+$linked = mysqli_connect("localhost", "root", "", "daycare db");
  
 // Check connection
 if($linked === false)
@@ -12,9 +12,12 @@ if($linked === false)
  
 print_r($_POST);
 print("<br>"); 
-$firname =isset( $_POST['emp_fname']);
-$lsname = isset($_POST['emp_lname']);
-$ssocial = isset($_POST['emp_ssn']);
+print("<br>"); 
+print("<br>"); 
+
+$firname =$_POST['emp_fname'];
+$lsname = $_POST['emp_lname'];
+$ssocial = $_POST['emp_ssn'];
 $date_b = $_POST["d_o_b"];
 $emailad = $_POST["emailaddy"];
 $phonen = $_POST["ph_num"];
