@@ -1,15 +1,51 @@
 <!DOCTYPE HTML>
-<html>  
-<body>
-<h1> Update any data </h1>
-<form action="update.php" method="post">
-Parent Name: <input type="text" name="parent_name"><br>
-Parent SSN: <input type="text" name="parent_ssn"><br>
-Child SSN: <input type="text" name="child_ssn"><br>
-Child Name: <input type="text" name="child_name"><br>
-Child DOB: <input type="date" name="child_dob"><br>
-<input type="submit">
-</form>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <title>Parent Sign Up</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <style type="text/css">
+        body{ font: 14px sans-serif; }
+        .wrapper{ width: 350px; padding: 20px; }
+    </style>
+</head>
 
+
+<body>
+<div class="container"> 
+  <div class="starter-template">
+     <div class="jumbotron">
+		<h1> Update any data </h1>
+			<form action="update.php" method="post">
+				<div class="form-group"> 
+					<label>Parent Name: <sup>*</sup></label>
+					<input type="text" name="parent_name" class="form-control">
+					<span class="help-block"> </span>
+         		</div>   
+				<div class="form-group"> 
+					<label>Parent SSN: <sup>*</sup></label>
+					<input type="text" name="parent_ssn" class="form-control">
+					<span class="help-block"> </span>
+         		</div> 
+				<div class="form-group"> 
+					<label>Child SSN: <sup>*</sup></label>
+					<input type="text" name="child_ssn" class="form-control">
+					<span class="help-block"> </span>
+         		</div> 
+				<div class="form-group"> 
+					<label>Child Name: <sup>*</sup></label>
+					<input type="text" name="child_name" class="form-control">
+					<span class="help-block"> </span>
+         		</div> 
+				<div class="form-group"> 
+					<label>Child DOB: <sup>*</sup></label>
+					<input type="text" name="child_dob" class="form-control">
+					<span class="help-block"> </span>
+         		</div> 
+				<input type="submit" class="btn btn-primary" value="Submit">
+			</form>
+</div>
+</div>
+</div>
 </body>
 </html>
