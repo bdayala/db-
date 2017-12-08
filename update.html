@@ -2,21 +2,25 @@
 <html> 
 <head>
     <meta charset="UTF-8">
-    <title>Parent Sign Up</title>
+    <title>update form</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display|Noto+Serif|Cutive+Mono|Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <style type="text/css">
+    <link rel="stylesheet" href="./css/update-styles.css">
+	<!--<style type="text/css">
         body{ font: 14px sans-serif; }
         .wrapper{ width: 350px; padding: 20px; }
-    </style>
+    </style>-->
 </head>
 
 
 <body>
 <div class="container"> 
   <div class="starter-template">
-     <div class="jumbotron">
-		<h1> Update any data </h1>
-			<form action="update.php" method="post">
+    
+		<img class="logo" src="./img/babylogo.png">
+		<h1><center>UPDATE FORM</center></h1>
+		<p><center>Edit any information needed below</center></p>
+			<form class="container-form" action="update.php" method="post">
 				<div class="form-group"> 
 					<label>Parent Name: <sup>*</sup></label>
 					<input type="text" name="parent_name" class="form-control">
@@ -44,7 +48,7 @@
          		</div> 
 				<input type="submit" class="btn btn-primary" value="Submit">
 			</form>
-</div>
+
 </div>
 </div>
 </body>

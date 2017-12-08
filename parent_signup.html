@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Parent Sign Up</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" href="css/signup-styles.css">		
     <style type="text/css">
         body{ font: 14px sans-serif; }
         .wrapper{ width: 350px; padding: 20px; }
@@ -11,14 +12,12 @@
 </head>
 
 <body>
-	<div class="container">
-		<div class="starter-template">
-		<div class= "jumbotron">
-		<title>Parent Sign Up</title> 
-			<p>Please fill in your information to successfully sign up.</p>
-		<!-- <form action="parent_signup.php" method="post"> -->
-		
-		<form method="post">
+	<div class= "container">
+		<img class="logo" src="./img/babylogo.png">
+		<title><center>Parent Sign Up</center></title> 
+		<p><center>Please fill in your information to successfully sign up.</center></p><br>
+			
+		<form class="container-form" action="parent_signup.php" method="post">
 		<div class="form-group"> 
 			<label>First Name: <sup>*</sup></label>
 				<input type="text" name="parent_fname" class="form-control">
@@ -64,9 +63,8 @@
 			<input type="submit" class="btn btn-primary" value="Submit">
 			
 		</form>
-
 	</div>
-</div>
+
 </body>
 </html>
 
