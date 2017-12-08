@@ -1,12 +1,8 @@
-UPDATE table_name
-SET column1 = value1, column2 = value2, ...
-WHERE condition;
-
 
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-$link = mysqli_connect("localhost", "root", "", "daycare database");
+$link = mysqli_connect("localhost", "root", "", "daycare_db");
  
 // Check connection
 if($link === false){

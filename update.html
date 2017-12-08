@@ -1,8 +1,7 @@
-<!DOCTYPE HTML>
-<html> 
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
-    <title>Parent Sign Up</title>
+    <title>Child Medical History</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
     <style type="text/css">
         body{ font: 14px sans-serif; }
@@ -10,42 +9,54 @@
     </style>
 </head>
 
-
 <body>
-<div class="container"> 
-  <div class="starter-template">
-     <div class="jumbotron">
-		<h1> Update any data </h1>
-			<form action="update.php" method="post">
-				<div class="form-group"> 
-					<label>Parent Name: <sup>*</sup></label>
-					<input type="text" name="parent_name" class="form-control">
-					<span class="help-block"> </span>
-         		</div>   
-				<div class="form-group"> 
-					<label>Parent SSN: <sup>*</sup></label>
-					<input type="text" name="parent_ssn" class="form-control">
-					<span class="help-block"> </span>
-         		</div> 
-				<div class="form-group"> 
-					<label>Child SSN: <sup>*</sup></label>
-					<input type="text" name="child_ssn" class="form-control">
-					<span class="help-block"> </span>
-         		</div> 
-				<div class="form-group"> 
-					<label>Child Name: <sup>*</sup></label>
-					<input type="text" name="child_name" class="form-control">
-					<span class="help-block"> </span>
-         		</div> 
-				<div class="form-group"> 
-					<label>Child DOB: <sup>*</sup></label>
-					<input type="text" name="child_dob" class="form-control">
-					<span class="help-block"> </span>
-         		</div> 
-				<input type="submit" class="btn btn-primary" value="Submit">
-			</form>
-</div>
-</div>
+<div class="container">
+<div class="starter-template">
+		<div class= "jumbotron">
+		<title>Update Child Medical History</title> 
+			<p>Please fill in your information you want to update in our medical records.</p>
+			
+		<form action="update.php" method="post">		
+			<div class="form-group ">
+			<label> Parent SSN:<sup>*</sup></label>
+			<input type="text" name="pa_ssn" class="form-control">
+			<span class="help-block"> </span>
+		</div>
+		<div class="form-group ">
+			<label> Child SSN:<sup>*</sup></label>
+			<input type="text" name="ch_ssn" class="form-control">
+			<span class="help-block"> </span>
+		</div>			
+		<div class="form-group"> 
+			<label>First Name: <sup>*</sup></label>
+				<input type="text" name="ch_fname" class="form-control">
+				<span class="help-block"> </span>
+         </div>    
+	
+		<div class="form-group ">
+			<label>Last Name:<sup>*</sup></label>
+			<input type="text" name="ch_lname" class="form-control">
+			<span class="help-block"> </span>
+		</div>			
+		<div class="form-group">
+			<label> Allergies: [0 = no, 1 = yes]<sup>*</sup></label>
+			<input type="text" name="allergy" class="form-control">
+			<span class="help-block"> </span>
+		</div>			
+			
+		<div class="form-group">
+			<label>Allergy Description:<sup>*</sup></label>
+			<input type="text" name="allergy_d" class="form-control">
+			<span class="help-block"> </span>
+		</div>	
+		<div class="form-group">
+			<label>Medicine Name:<sup>*</sup></label>
+			<input type="text" name="meds" class="form-control">
+			<span class="help-block"> </span>
+		</div>
+			<input type="submit" class="btn btn-primary" value="Submit">
+			
+		</form>
 </div>
 </body>
 </html>
