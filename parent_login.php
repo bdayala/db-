@@ -16,8 +16,8 @@
 			// Connect to the database and select the user based on their provided email address.
 			// Be sure to retrieve their password and any other information you want to save for the user session.
 			$pdo = new Database();
-			$pdo->query("SELECT * FROM parent WHERE email = :emailaddy");
-			$pdo->bind(':emailaddy', $email);
+			$pdo->query("SELECT * FROM parent WHERE $email = email_address" );
+			$pdo->bind('email_address', $email);
 			$row = $pdo->single();
 
 
@@ -26,13 +26,13 @@
 			// These values follow the user around the site and will be tested on each page.
 			if (($row !== false) && ($pdo->rowCount() > 0)) 
 			{
-				if ($row['password'] == hash('sha256', $pass)) 
+				if ($row['parent_ssn'] == hash('sha256', $social)) 
 				{
 
 					// is_auth is important here because we will test this to make sure they can view other pages
 					// that are needing credentials.
 					$_SESSION['is_auth'] = true;
-					$_SESSION['emailaddy'] = $row['emailaddy'];
+					$_SESSION['email_address'] = $row['email_address'];
 					$_SESSION['parent_ssn'] = $row['parent_ssn'];
 
 					// Once the sessions variables have been set, redirect them to the landing page / home page.

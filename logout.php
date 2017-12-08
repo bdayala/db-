@@ -6,7 +6,7 @@ session_start();
 // If test fails, send the user to login.php and prevent rest of page being shown.
 if (!isset($_SESSION["is_auth"])) 
 {
-	header("location: parent_login.html");
+	header("location: index.html");
 	exit;
 }
 else if (isset($_REQUEST['logout']) && $_REQUEST['logout'] == "true") {
@@ -15,8 +15,8 @@ else if (isset($_REQUEST['logout']) && $_REQUEST['logout'] == "true") {
 	unset($_SESSION['is_auth']);
 	session_destroy();
 
-	// After logout, send them back to login.php
-	header("location: login.php");
+	// After logout, send them back to home
+	header("location: index.html");
 	exit;
 }
 

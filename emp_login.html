@@ -1,16 +1,3 @@
-<!-- <!DOCTYPE HTML>
-<html>  
-<body>
-<h1> Employee Login </h1>
-<form action="emplogin.html" method="post">
-Employee Name: <input type="text" name="emp_name"><br>
-Employee SSN: <input type="text" name="emp_ssn"><br>
-<input type="submit">
-</form>
-
-</body>
-</html>
- -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,10 +14,10 @@ Employee SSN: <input type="text" name="emp_ssn"><br>
 
     
     <div class="container">
-        <img class="logo" src="./img/babylogo.png">
+        <img class="logo" src="./img/baby.png">
         <h2><center>Employee Login</center></h2>
         <p><center>Please fill in your employee information to login.</center></p><br>
-        <form class = "container-form" action="emplogin.php" method="post">
+        <form class = "container-form" action="emp_login.php" method="post">
             <div class="form-group <?php echo (!empty($emailaddy)) ? 'has-error' : ''; ?>">
                 <label>Email:<sup>*</sup></label>
                 <input type="text" name="emailaddy" class="form-control">
@@ -50,3 +37,5 @@ Employee SSN: <input type="text" name="emp_ssn"><br>
   
 </body>
 </html>
+
+
