@@ -1,0 +1,28 @@
+body{
+    background-color:#f2e6ff;
+}
+.container{
+    margin-top:20px;
+    padding-bottom: 10px;
+    background-color:#fff;
+    border:1px solid #bfbfbf;
+}
+.container h1{
+    font-family:"Noto Serif";
+}
+
+.container-form{
+    display: block;
+    width:400px;
+    height:550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}

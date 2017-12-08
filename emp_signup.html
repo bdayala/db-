@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Employee Sign Up</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+	<link rel="stylesheet" href="css/signup-styles.css">		
     <style type="text/css">
         body{ font: 14px sans-serif; }
         .wrapper{ width: 350px; padding: 20px; }
@@ -11,11 +12,14 @@
 </head>
 
 <body>
-	<div class= "wrapper">
-		<title>Employee Sign Up</title> 
-			<p>Please fill in your employee information to successfully sign up.</p>
+
+	<div class= "container">
+		<title>Sign Up</title>
+			<img class="logo" src="./img/babylogo.png">
+			<p><center>Please fill in your <i>employee information</i> to successfully sign up.</center></p><br>
+
 			
-		<form action="emp_signup.php" method="post">
+		<form class="container-form" action="emp_signup.php" method="post">
 		<div class="form-group"> 
 			<label>First Name: <sup>*</sup></label>
 				<input type="text" name="emp_fname" class="form-control">
@@ -58,9 +62,10 @@
 			<span class="help-block"> </span>
 		</div>
 
-			<input type="submit">
+			<input type="submit" class="btn btn-primary" value="Submit">
 			
 		</form>
+	</div>
 
 </body>
 </html>
